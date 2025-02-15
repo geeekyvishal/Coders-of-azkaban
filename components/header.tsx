@@ -15,7 +15,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-20 items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
-          <Image src={globe} alt="IIIT Nagpur Logo" className="h-8 w-8" width={10} height={10}/>
+          <Image src={globe} alt="GeoRescue Logo" className="h-8 w-8" width={10} height={10}/>
           <span className="hidden font-bold sm:inline-block">
             GeoRescue
           </span>

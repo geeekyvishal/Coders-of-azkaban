@@ -1,7 +1,8 @@
-import Image from "next/image"
-import { MobileNav } from "@/components/mobile-nav"
-import { Search } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import Image from "next/image";
+import { MobileNav } from "@/components/mobile-nav";
+import { Search } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
 
 export default function Page() {
   return (
@@ -46,9 +47,15 @@ export default function Page() {
         {/* Hero Content */}
         <div className="relative z-10 flex min-h-[calc(100vh-5rem)] items-center justify-center px-4">
           <div className="text-center">
-            <h2 className="animate-in text-4xl font-bold text-white md:text-6xl">GeoRescue</h2>
+            <h2 className="animate-in text-4xl font-bold text-white md:text-6xl">
+              GeoRescue
+            </h2>
             <p className="animate-in mt-4 max-w-2xl text-lg text-white/90 [animation-delay:200ms]">
-            Relief at the Right Time, Help in the Right Place.            </p>
+              Relief at the Right Time, Help in the Right Place.{" "}
+            </p>
+            <button className="bg-white text-black py-4 px-6 mt-10 font-extrabold">
+              Get Help Now!
+            </button>
           </div>
         </div>
       </div>
@@ -75,7 +82,8 @@ export default function Page() {
                 <div className="p-4">
                   <h3 className="font-semibold">Featured News Title {i}</h3>
                   <p className="mt-2 text-sm text-muted-foreground">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    do eiusmod tempor incididunt ut labore.
                   </p>
                 </div>
               </div>
@@ -83,7 +91,13 @@ export default function Page() {
           </div>
         </div>
       </section>
-    </>
-  )
-}
 
+      <section className="mb-48">
+        <div className="container">
+          <h2 className="mb-8 text-3xl font-bold">Disaster Heatmap</h2>
+          <div className="bg-white h-60"></div>
+        </div>
+      </section>
+    </>
+  );
+}
