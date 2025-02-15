@@ -5,6 +5,8 @@ import Link from "next/link"
 import { Moon, Sun } from 'lucide-react'
 import { useTheme } from "next-themes"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
+import globe from "@/components/icons/globe.svg";
 
 export default function Header() {
   const { setTheme, theme } = useTheme()
@@ -13,9 +15,9 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-20 items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
-          <img src="/placeholder.svg" alt="IIIT Nagpur Logo" className="h-8 w-8" />
+          <Image src={globe} alt="IIIT Nagpur Logo" className="h-8 w-8" width={10} height={10}/>
           <span className="hidden font-bold sm:inline-block">
-            IIIT Nagpur
+            GeoRescue
           </span>
         </Link>
         <div className="flex-1" />

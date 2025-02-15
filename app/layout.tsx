@@ -8,8 +8,8 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "IIIT Nagpur - Indian Institute of Information Technology",
-  description: "Indian Institute of Information Technology, Nagpur - An Institute of National Importance",
+  title: "GeoRescue : Your Disaster Management Platform",
+  description: "A disaster management platform which utilizes AI and Geolocation to make aid easier!",
 }
 
 export default function RootLayout({

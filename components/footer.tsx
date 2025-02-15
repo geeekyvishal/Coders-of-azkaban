@@ -1,10 +1,10 @@
-import { Facebook, Linkedin, Twitter, Youtube } from "lucide-react"
+// import { Facebook, Linkedin, Twitter, Youtube } from "lucide-react"
 import Link from "next/link"
 
 export default function Footer() {
   return (
     <footer className="border-t bg-background">
-      <div className="container grid gap-8 px-6 py-12 md:grid-cols-2 lg:grid-cols-4">
+      {/* <div className="container grid gap-8 px-6 py-12 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <h3 className="mb-4 text-lg font-semibold">Contact Us</h3>
           <address className="text-sm text-muted-foreground not-italic">
@@ -92,11 +92,11 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="border-t">
         <div className="container flex flex-col items-center justify-between gap-4 py-6 text-center md:flex-row md:text-left">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} IIIT Nagpur. All rights reserved.
+            © {new Date().getFullYear()} GeoRescue. All rights reserved.
           </p>
           <div className="flex gap-4 text-sm text-muted-foreground">
             <Link href="/privacy-policy" className="hover:text-foreground">
